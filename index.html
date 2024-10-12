@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .subscribe-btn {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Hidden initially */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div class="left-text">
+            <h1 class="heading">One Piece</h1>
+            <p class="sub-heading">Within One Piece's Wano County arc, some of the best battles have taken place in Onigashima. Here are the most thrilling...</p>
+        </div>
+
+        <div class="gallery">
+          
+            <div class="box row2"  style="background-image: url(https://64.media.tumblr.com/e5fc6da93cb67b6d4869d50902fd2705/b76e7732f53ecd5e-06/s1280x1920/6c94d39048e4cbb4b8423a0d7aebdd9c9fbced5c.gifv);">luffy</div>
+
+            <div class="box col2" style="background-image: url(https://64.media.tumblr.com/258cd3c64318d783e4ee2bccdcd9f452/b76e7732f53ecd5e-f7/s1280x1920/f285fa956ad5aea210e7fa2d70024cc8143a401b.gifv);">zoro</div>
+            <div class="box " style="background-image: url(https://64.media.tumblr.com/6b7246d9f2e99924de52eaf84801cf2a/b76e7732f53ecd5e-ec/s1280x1920/4ec64845cad1c8be05ed6fd92dfae3213960a618.gifv);">sanji</div>
+            <div class="box row2" style="background-image: url(https://64.media.tumblr.com/1f21e7b59fad9fd3fcd048ed546637a8/7411e9be42a7be7f-4a/s1280x1920/d8f954db26ef1b38147c379a82d0aa6434189048.gifv);">usopp</div>
+            <div class="box col2" style="background-image: url(https://64.media.tumblr.com/615c185b91f70218a5e8e3b1bdae9ec7/de5a74b1fe66022e-af/s1280x1920/ab393768aba6ca6e518dfa7712ae7d2a0a4fe0a6.gifv);">franky</div>
+
+            <div class="box" style="background-image: url(https://64.media.tumblr.com/4ac8f27105b258c12d4b24901d2a662b/ff3f1b2471c9dc0a-70/s1280x1920/6a6a9ec55228032ab590dc7eea305e3f0723ca71.gifv);">robin </div>
+            <div class="box col2" style="background-image: url(https://64.media.tumblr.com/78c2ad88a3a39743af9e5e90cc93b4a0/b76e7732f53ecd5e-7b/s1280x1920/4fab3e006a1e79422d87df11a12e22d292825798.gifv);">Jack</div>
+        </div>
+
+        <!-- Subscribe Button -->
+        <button class="subscribe-btn" onclick="subscribe()">Subscribe to Download</button>
+        
+        <!-- Download Button (Hidden initially) -->
+        <a href="acc.txt" class="download-btn" id="downloadBtn">Download File</a>
+    </div>
+
+    <script>
+        function subscribe() {
+            // Redirect user to your YouTube subscription link
+            window.open('https://www.youtube.com/@paiiin_yt?sub_confirmation=1', '_blank');
+
+            // Simulate after they subscribe, show the download button
+            // In reality, you cannot detect if they actually subscribed
+            alert('Thank you for subscribing! You can now download the file.');
+            document.getElementById('downloadBtn').style.display = 'inline-block';
+        }
+    </script>
+</body>
+</html>
